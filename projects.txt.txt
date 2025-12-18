@@ -1,0 +1,59 @@
+<section class="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>{{ module.project1_name }}</h3>
+    <p>{{ module.project1_desc }}</p>
+  </div>
+
+  <div class="project">
+    <h3>{{ module.project2_name }}</h3>
+    <p>{{ module.project2_desc }}</p>
+  </div>
+
+  <div class="project">
+    <h3>{{ module.project3_name }}</h3>
+    <p>{{ module.project3_desc }}</p>
+  </div>
+</section>
+
+
+
+
+.projects {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #ff6b81;
+}
+
+.project {
+  background-color: #2a2a2a;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project h3 {
+  color: #ff6b81;
+  margin-bottom: 10px;
+}
+
+.project p {
+  color: #dcdcdc;
+  line-height: 1.5;
+}
