@@ -1,50 +1,50 @@
-<section class="hero">
-  <div class="hero-content">
-    <div class="hero-text">
-      <h1>{{ module.Name }}</h1>
-      <h3>{{ module.Title }}</h3>
-      <p>{{ module.Description }}</p>
-    </div>
-  </div>
+<section class="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>{{ module.skill_1 }}</li>
+    <li>{{ module.skill_2 }}</li>
+    <li>{{ module.skill_3 }}</li>
+    <li>{{ module.skill_4 }}</li>
+    <li>{{ module.skill_5 }}</li>
+    <li>{{ module.skill_6 }}</li>
+  </ul>
 </section>
 
 
 
 
-
-
-
-.hero {
-  background-color: #000000;
+.skills {
+  background-color: #121212;
   color: #ffffff;
-  padding: 60px 20px;
+  padding: 50px 20px;
   font-family: 'Segoe UI', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.hero-content {
-  max-width: 1000px;
+.skills h2 {
   text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #00ffa3;
 }
 
-.hero-text h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-  color: #00d4ff;
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 15px;
 }
 
-.hero-text h3 {
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  color: #a0a0a0;
+.skills ul li {
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
-.hero-text p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: #e0e0e0;
-  max-width: 700px;
-  margin: 0 auto;
+.skills ul li:hover {
+  background-color: #00ffa3;
+  color: #121212;
+  transform: scale(1.1);
 }
